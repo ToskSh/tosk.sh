@@ -15,13 +15,13 @@ const config = {
     main: './src/index.ts',
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     // filename: '[name].[extension]',
     clean: true,
   },
   watch: true,
   devServer: {
-    static: './dist',
+    static: './docs',
     host: 'localhost',
     port: 8082,
     //host: '0.0.0.0',
