@@ -1,7 +1,7 @@
 import "./css/style.css"
 
 import $ from 'jquery';
-import Typewriter from 'typewriter-effect/docs/core';
+import Typewriter from 'typewriter-effect/dist/core';
 
 start();
 
