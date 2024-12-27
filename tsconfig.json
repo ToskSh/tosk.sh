@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es2017",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+  },
+  // "compilerOptions": {
+  //   "module": "commonjs",
+  //   "target": "es2017",
+  //   "esModuleInterop": true,
+  //   "allowSyntheticDefaultImports": true,
+  //   "outDir": "./dist",
+  //   "noImplicitAny": true,
+  //   "moduleResolution": "node",
+  //   "sourceMap": true
+  // },
+  "include": [
+    "AsciiGenerator/**/*",
+    "./src/**/*",
+    "./node_modules/typewriter-effect/**/*"
+  ]
+}

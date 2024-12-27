@@ -1,0 +1,399 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/FiraMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/FiraMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/FiraMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+	background-color: #120E14 !important;
+}
+
+body {
+    background: #120E14;
+    color: rgb(185, 180, 169);
+    font-family: "CustomFont", monospace;
+    font-size: 1vw;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 0px;
+    max-width: 75%;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* .Typewriter__wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+header {
+    margin: 40px 0px 60px;
+}
+
+header .site-title a {
+    text-decoration: none;
+}
+
+header .devlog-title {
+    font-weight: bold;
+}
+
+header h1 a {
+    color: rgb(185, 180, 169);
+}
+
+.green {
+    color: rgb(0, 170, 0);
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    padding-bottom: 8rem;
+    display: table;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+footer nav {
+    margin-top: 20px;
+}
+
+footer .svglink,
+footer svglink:hover {
+    text-decoration: none;
+}
+
+footer svg {
+    fill: rgb(185, 180, 169);
+    width: 20px;
+}
+
+footer svg:hover {
+    fill: rgb(0, 170, 0);
+    stroke: rgb(0, 170, 0);
+}
+
+#archive {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+img {
+    margin: 20px 0px;
+    padding: 0px;
+	max-width: 100%;
+}
+
+svg {
+    stroke: rgb(185, 180, 169);
+    stroke-width: 1;
+    fill: rgb(185, 180, 169);
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(0, 170, 0);
+    text-decoration: none
+}
+
+.underline:hover {
+    color: rgb(0, 170, 0);
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgb(0, 170, 0);
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.underline:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.highlight {
+    color: rgb(185, 180, 169);
+    position: relative;
+    z-index: 1;
+}
+
+.highlight::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: rgb(0, 170, 0);
+    transform-origin: bottom center;
+    transform: scaleY(0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.highlight:hover::before {
+    transform: scaleY(1);
+    background-color: rgb(0, 170, 0);
+}
+
+.highlight:hover {
+    cursor: pointer;
+    color: #404040;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    width: 350px;
+    top: 110%;
+    left: 50%;
+    margin-left: -175px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    color: #fff;
+    visibility: visible;
+  }
+
+.cursor {
+    animation: cursor 2s infinite;
+    color: rgb(0, 170, 0);
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    margin-left: 5px;
+    bottom: 5px;
+    border-radius: 1px;
+}
+
+.centered {
+	margin: 0px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+
+pre {
+	max-width: 75%;
+	overflow: scroll;
+	padding: 15px 15px;
+	font-size: 0.9px;
+}
+
+.typerCursor {
+    animation: cursor 2s infinite;
+    font-size: inherit;
+    position: relative;
+    bottom: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typerCursorTitle {
+    animation: cursor 2s infinite;
+    font-size: inherit;
+    position: relative;
+    bottom: 1px;
+    font-size: 3vw;
+    font-weight: bold; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typerCursorInfo {
+    animation: cursor 2s infinite;
+    font-size: inherit;
+    position: relative;
+    bottom: 1px;
+    font-size: 1.5vw;
+    font-weight: bold; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1, .h1 {
+    font-size: 3vw;
+    /* font-weight: 800;  */
+}
+
+h2, .h2 {
+    font-size: 2.5vw;
+    /* font-weight: 800;  */
+}
+
+h3, .h3 {
+    font-size: 2vw;
+    /* font-weight: 700;  */
+}
+
+h4, .h4 {
+    font-size: 1.5vw;
+    /* font-weight: 700;  */
+}
+
+h5, .h5 {
+    font-size: 1.2vw;
+    /* font-weight: 700;  */
+}
+
+img#terminal {
+    margin: 0 0 -12px 0;
+    width: 50px;
+}
+
+.blockquote {
+    margin-left: 40px;
+}
+
+#ascii {
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre;
+    font-size: 4px;
+    line-height: 1; /* Adjust line height for better vertical spacing */
+    
+    opacity: 90%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.line {
+    display: none;
+}
+
+#links {
+    text-align: right;
+}
+
+#info {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    #ascii {
+        font-size: 3px;
+        /* font-family: monospace, Courier, 'Courier New'; */
+    }
+    body, .typerCursor {
+        font-size: 2.8vw;
+    }
+    .typerCursorTitle {
+        font-size: 4vw;
+    }
+    .typerCursorInfo {
+        font-size: 3vw;
+    }
+
+    h1, .h1 {
+        font-size: 4vw;
+        font-weight: 500; 
+    }
+
+    h2, .h2 {
+        font-size: 3.5vw;
+        /* font-weight: 800;  */
+    }
+
+    h3, .h3 {
+        font-size: 3.25vw;
+        /* font-weight: 700;  */
+    }
+
+    h4, .h4 {
+        font-size: 3vw;
+        /* font-weight: 700;  */
+    }
+}
+
+.hidden {
+    display: none!important;
+}
+
+/* .blockquote {
+    display: inline-flexbox;
+    margin-block-start: 1em;
+    margin-block-end: auto;
+    margin-inline-start: 40px;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+} */
