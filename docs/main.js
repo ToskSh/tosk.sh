@@ -9608,7 +9608,7 @@ function generateInfo() {
     })
         .typeString("<br><span class='h2'><img id='feature' src='assets/feature.png'> <strong>Features</strong>:</span>")
         .typeString("<br><span class='h3'>- 📝 <a class='highlight tooltip tooltip--smaug' onclick='todolist()'><strong>todo-list</strong></a> by project</span>")
-        .typeString("<br><span class='h3'>- 💫 terminal <a class='highlight' onclick='cli()'><strong>CLI</strong></a> app</span>")
+        .typeString("<br><span class='h3'>- Terminal <a class='highlight' onclick='cli()'><strong>CLI</strong></a> app 💫</span>")
         .typeString("<br><span class='h3'>- <a class='highlight' onclick='manage()'><strong>Manage</strong></a> your ⏱</span>")
         .typeString("<br><span class='h3'>- ✏️ <a class='highlight' onclick='comments()'><strong>comments</strong></a> to a <a class='highlight' onclick='task()'>task</a> with <a class='highlight' onclick='markdown()'><strong>Markdown</strong></a></span>")
         .typeString("<br><span class='h3'>- Keep <a class='highlight' onclick='focus()'><strong>organized</strong> and <strong>focus</strong> ⛳️</a></span>")
