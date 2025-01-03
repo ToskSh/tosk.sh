@@ -48,7 +48,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
-    // new WorkboxWebpackPlugin.GenerateSW(),
+    new WorkboxWebpackPlugin.GenerateSW(),
   ],
   module: {
     rules: [
