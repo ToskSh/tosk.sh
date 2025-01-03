@@ -23,7 +23,7 @@ function start() {
     .callFunction(() => {
         generateLinks().callFunction(() => {
             generateInfo().callFunction(() => {
-                generateAsciiArt();
+                // generateAsciiArt();
             });
         });
     })
@@ -39,7 +39,7 @@ function generateLinks() {
         cursor: '█',
         cursorClassName: 'typerCursor',
     })
-    .typeString("Github project: <a href='https://github.com/ToskSh/Tosk' title='Github ToskSh/Tosk link'>ToskSh/Tosk</a>")
+    .typeString("<img id='github' src='assets/github.png'> Github project: <a class='green' href='https://github.com/ToskSh/Tosk' title='Github ToskSh/Tosk link'>ToskSh/Tosk</a>")
     .changeCursor(' ')
     .start()
 
@@ -56,14 +56,13 @@ function generateInfo() {
         cursor: '█',
         cursorClassName: 'typerCursorInfo',
     })
-    .typeString("<br><span class='h4'>💡 <strong>Features</strong>:</span>")
-    .typeString("<br><span class='h5'>- 📝 <strong>todo-list</strong> by project</span>")
-    .typeString("<br><span class='h5'>- 💫 terminal <strong>CLI</strong> app</span>")
-    .typeString("<br><span class='h5'>- <strong>Manage</strong> your ⏱</span>")
-    .typeString("<br><span class='h5'>- ✏️ <strong>comments</strong> to a task with <strong>Markdown</strong></span>")
-    .typeString("<br><span class='h5'>- Keep <strong>organized</strong> and <strong>focus</strong> ⛳️</span>")
-    .typeString("<br><span class='h5'>- ❌ database, just <strong><em>.json</em></strong> file</span>")
-    .typeString("<br><span class='h5'>- <a class='highlight green'><strong>Git</strong> 🪢</a></span>")
+    .typeString("<br><span class='h2'><img id='feature' src='assets/feature.png'> <strong>Features</strong>:</span>")
+    .typeString("<br><span class='h3'>- 📝 <a class='highlight tooltip tooltip--smaug' onclick='todolist()'><strong>todo-list</strong></a> by project</span>")
+    .typeString("<br><span class='h3'>- 💫 terminal <a class='highlight' onclick='cli()'><strong>CLI</strong></a> app</span>")
+    .typeString("<br><span class='h3'>- <a class='highlight' onclick='manage()'><strong>Manage</strong></a> your ⏱</span>")
+    .typeString("<br><span class='h3'>- ✏️ <a class='highlight' onclick='comments()'><strong>comments</strong></a> to a <a class='highlight' onclick='task()'>task</a> with <a class='highlight' onclick='markdown()'><strong>Markdown</strong></a></span>")
+    .typeString("<br><span class='h3'>- Keep <a class='highlight' onclick='focus()'><strong>organized</strong> and <strong>focus</strong> ⛳️</a></span>")
+    .typeString("<br><span class='h3'>- <a class='highlight' onclick='git()'><strong>Git</strong> implementation 🪢</a></span>")
     .changeCursor(' ')
     .start()
 
